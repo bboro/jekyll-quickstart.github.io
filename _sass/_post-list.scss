@@ -1,0 +1,16 @@
+.post-list {
+  list-style: none;
+  padding: 0;
+
+  &__post-title {
+    @extend h2;
+
+    a {
+      border-bottom: 0 none;
+    }
+  }
+
+  &__date {
+    font-size: 0.75rem;
+  }
+}

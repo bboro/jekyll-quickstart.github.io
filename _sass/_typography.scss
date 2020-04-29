@@ -1,0 +1,145 @@
+html {
+  font-size: 1.2em;
+}
+
+body {
+  line-height: 1.5em;
+  font-family: "CooperHewitt Book", sans-serif;
+}
+
+em,
+b,
+strong {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "CooperHewitt Semibold", sans-serif;
+}
+
+h1 {
+  font-size: 1.4em;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 2em 0;
+  margin: 0;
+  font-family: "CooperHewitt Semibold", sans-serif;
+  border-bottom: 1px solid $h-border-color;
+  border-top: 1px solid $h-border-color;
+
+  @media (prefers-color-scheme: light) {
+    border-bottom: 1px solid $h-border-color--light;
+    border-top: 1px solid $h-border-color--light;
+  }
+}
+
+h2 {
+  font-size: 1.15em;
+  margin-top: 5em;
+  padding-bottom: 0.5em;
+  font-family: "CooperHewitt Semibold", sans-serif;
+  border-bottom: 2px solid $h-border-color;
+  margin-bottom: 1rem;
+
+  @media (prefers-color-scheme: light) {
+    border-bottom: 2px solid $h-border-color--light;
+  }
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-top: 2.5em;
+  margin-bottom: 1rem;
+  font-family: "CooperHewitt Semibold", sans-serif;
+}
+
+h4 {
+  font-size: 1.05em;
+  margin-top: 1.6em;
+  margin-bottom: 1rem;
+  font-family: "CooperHewitt Semibold", sans-serif;
+}
+
+h5 {
+  font-size: 1em;
+  margin-top: 1.6em;
+  margin-bottom: 1rem;
+  font-family: "CooperHewitt Semibold", sans-serif;
+}
+
+h6 {
+  font-size: 0.9em;
+  margin-top: 1.5em;
+  margin-bottom: 1rem;
+  font-family: "CooperHewitt Semibold", sans-serif;
+}
+
+ul, ol {
+  padding-left: 1em;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+blockquote {
+  font-size: 1.15em;
+  margin: 1.5em 2.5em;
+  font-family: "CooperHewitt Book", sans-serif;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: center;
+
+  // Opening & closing quotes
+  &::before,
+  &::after {
+    display: block;
+    color: $pale-copper;
+    margin: 1rem 0.5rem;
+  }
+  &::before {
+    content: "“";
+  }
+  &::after {
+    content: "”";
+  }
+}
+
+footer {
+  font-size: 0.9em;
+  font-family: "CooperHewitt Book", sans-serif;
+  color: inherit;
+
+  address {
+    font-style: normal;
+  }
+}
+
+a {
+  &:link,
+  &:visited {
+    color: $link-color;
+    border-bottom: 1px solid $link-border-color;
+    text-decoration: none;
+
+    @media (prefers-color-scheme: light) {
+      color: $link-color--light;
+      border-bottom-color: $link-border-color--light;
+    }
+
+    -webkit-transition: color 0.25s linear;
+    -moz-transition: color 0.25s linear;
+    -ms-transition: color 0.25s linear;
+    -o-transition: color 0.25s linear;
+    transition: color 0.25s linear;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    border-bottom: 0;
+
+    @media (prefers-color-scheme: light) {
+      color: $link-hover-color--light;
+    }
+  }
+}

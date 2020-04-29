@@ -1,0 +1,3 @@
+title: Jekyll Quickstart
+exclude: ['README.md', 'styleguide.md', 'docker-compose.yml', 'vendor', 'Gemfile', 'Gemfile.lock', '.idea', 'scripts']
+repository: 'bboro/jekyll-quickstart.github.io'

@@ -1,0 +1,113 @@
+$form-breakpoint: 600px;
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3em;
+
+  label {
+    font-size: 0.95em;
+    display: block;
+    color: inherit;
+  }
+
+  .input-wrapper,
+  .textarea-wrapper,
+  .button-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 0;
+
+    @media screen and (min-width: $form-breakpoint) {
+      width: 50%;
+      padding-right: 2em;
+    }
+  }
+
+  .textarea-wrapper {
+    @media screen and (min-width: $form-breakpoint) {
+      width: 100%;
+    }
+  }
+
+  .button-wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $form-breakpoint) {
+      width: 30%;
+    }
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid $form-border-optional-color;
+    border-radius: 0;
+    padding: 0.5em 0.25em;
+    height: 3.15em;
+    box-sizing: inherit;
+    width: 100%;
+    background-color: $bg-color;
+    color: inherit;
+
+    @media (prefers-color-scheme: light) {
+      background-color: $bg-color--light;
+      border-bottom-color: $form-border-optional-color--light;
+    }
+
+    &[required] {
+      border-bottom: 1px solid $form-border-required-color;
+
+      @media (prefers-color-scheme: light) {
+        border-bottom: 1px solid $form-border-required-color--light;
+      }
+    }
+  }
+
+  textarea {
+    min-height: 8em;
+  }
+
+  button {
+    border: 1px solid $form-button-border-color;
+    background: $form-button-background-color;
+    color: $form-button-color;
+    width: 100%;
+    height: 3.2em;
+    padding: 1em;
+    display: block;
+    vertical-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px darken($form-button-border-color, 5%);
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+
+    &:hover {
+      color: $form-button-hover-color;
+      background: $form-button-background-hover-color;
+      border-color: $form-button-border-hover-color;
+      box-shadow: inset 0 0 20px 5px darken($form-button-border-color, 5%), 2px 2px 2px 2px darken($form-button-border-color, 5%);
+    }
+
+    @media (prefers-color-scheme: light) {
+      color: $form-button-color--light;
+      background: $form-button-background-color--light;
+      box-shadow: 0px 0px 2px 2px darken($rich-black, 5%);
+      border-color: $form-button-border-color--light;
+
+      &:hover {
+        color: $form-button-hover-color--light;
+        background: $form-button-background-hover-color--light;
+        border-color: $form-button-border-hover-color--light;
+        box-shadow: inset 0px 0px 20px 5px darken($form-button-border-color--light, 5%), 0px 0px 2px 2px darken($form-button-border-color--light, 5%);
+      }
+    }
+  }
+}

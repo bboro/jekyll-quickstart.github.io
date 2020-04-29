@@ -1,0 +1,59 @@
+// Coolors Exported Palette - coolors.co/222222-797a9e-72727e-8ae1fc-ffffff
+$raisin-black: rgba(34, 34, 34, 1);
+$pale-copper: rgba(219, 127, 103, 1);
+$nickel: rgba(114, 114, 126, 1);
+$pale-cyan: rgba(138, 225, 252, 1);
+$light-cyan: #DAFDFF;
+$white: rgba(255, 255, 255, 1);
+
+// Coolors Exported Palette - coolors.co/2b5d9a-faf9f3-5cc8ff-1e1913-022f40
+$cobalt-blue: #2B5D9A;
+$floral-white: #FAF9F3;
+$maya-blue: #5CC8FF;
+$eerie-black: #1E1913;
+$rich-black: #022F40;
+
+// Custom colors
+
+// Dark mode
+$cyber-grape: #54457F;
+$corn-blue: #A9CEF4;
+$bg-color: $raisin-black;
+$text-color: $white;
+$footer-border-color: $nickel;
+$link-color: $pale-cyan;
+$link-hover-color: $pale-copper;
+$link-border-color: $pale-copper;
+$h-border-color: $nickel;
+
+$nav-border-color: $nickel;
+
+$form-border-optional-color: $nickel;
+$form-border-required-color: $pale-copper;
+$form-button-background-color: $pale-copper;
+$form-button-background-hover-color: $pale-copper;
+$form-button-color: $raisin-black;
+$form-button-hover-color: $raisin-black;
+$form-button-border-color: $raisin-black;
+$form-button-border-hover-color: $raisin-black;
+
+
+// Light mode
+$bg-color--light: $floral-white;
+$text-color--light: $eerie-black;
+$footer-border-color--light: $nickel;
+$link-color--light: $rich-black;
+$link-hover-color--light: lighten($rich-black, 20%);
+$link-border-color--light: lighten($rich-black, 20%);
+$h-border-color--light: $nickel;
+
+$nav-border-color--light: $nickel;
+
+$form-border-optional-color--light: $nickel;
+$form-border-required-color--light: $pale-copper;
+$form-button-background-color--light: $rich-black;
+$form-button-background-hover-color--light: $cobalt-blue;
+$form-button-color--light: $floral-white;
+$form-button-hover-color--light: $floral-white;
+$form-button-border-color--light: $rich-black;
+$form-button-border-hover-color--light: $rich-black;
