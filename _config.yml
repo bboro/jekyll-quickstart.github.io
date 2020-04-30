@@ -1,3 +1,4 @@
 title: Jekyll Quickstart
+formEmail: email@domain.com
 exclude: ['README.md', 'styleguide.md', 'docker-compose.yml', 'vendor', 'Gemfile', 'Gemfile.lock', '.idea', 'scripts']
 repository: 'bboro/jekyll-quickstart.github.io'
