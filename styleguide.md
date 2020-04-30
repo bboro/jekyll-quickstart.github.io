@@ -1,5 +1,5 @@
 ---
-title: Fabb website style guide
+title: Jekyll Quickstart website style guide
 ---
 
 Vivamus nulla felis, fermentum ac libero et, lobortis blandit dui. Praesent id dui et ante maximus bibendum quis non neque.
